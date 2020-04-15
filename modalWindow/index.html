@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Модальное окно</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="lesson5-1.js"></script>
+  </head>
+  <body>
+    <div class="modal-overlay" id="modal-overlay"></div>
+
+    <div
+      class="modal rotate-scale-up"
+      id="modal"
+      aria-hidden="true"
+      aria-labelledby="modalTitle"
+      aria-describedby="modalDescription"
+      role="dialog"
+    >
+      <button
+        class="close-button"
+        id="close-button"
+        title="Закрыть модальное окно"
+      >
+        Закрыть
+      </button>
+      <div class="modal-guts" role="document">
+        <h1>Заголовок</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </p>
+      </div>
+    </div>
+    <button id="open-button" class="open-button">Открыть окно</button>
+  </body>
+</html>
