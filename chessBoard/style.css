@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.board {
+  display: flex;
+}
+.vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+.rowNum {
+  display: flex;
+  width: 640px;
+  height: 80px;
+}
+
+.colSymbol {
+  margin-top: 80px;
+  width: 80px;
+  height: 640px;
+  display: flex;
+  flex-direction: column;
+}
+.row,
+.col {
+  width: 80px;
+  height: 80px;
+  font-size: 34px;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.main {
+  width: 640px;
+  height: 640px;
+  border: 1px solid #000;
+}
+
+.block {
+  width: 80px;
+  height: 80px;
+  float: left;
+}
+
+.black {
+  background: black;
+}
+.white {
+  background: white;
+}
